@@ -1,10 +1,3 @@
-## 组件功能
-
-用面向对象实现Tab选项卡，点击按钮切换到对应的内容
-
-## 组件实现方式
-
-```
 function Tab (node,obj){
   this.container = node;
   this.aInput = this.container.getElementsByTagName('input');
@@ -41,10 +34,7 @@ Tab.prototype = {
       obj.style.color = this.ChangeTabColor;
     }
 }
-```
-## 如何使用
 
-```
 var tab1 = new Tab(document.querySelectorAll('.tab-container')[0],{
             ChangeTabBgc:'yellowgreen',
             ChangeTabColor:"#fff",
@@ -55,6 +45,3 @@ var tab2 = new Tab(document.querySelectorAll('.tab-container')[1],{
          ChangeTabColor:"#fff",
     });
 tab2.init()
-```
-
-组件tab1 与 组件 tab2 原型是共用的，但不会影响到按钮点击切换

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      .tab-container {
+          margin-top:50px;
+          text-align:center;
+      }
+      .tab-container input{
+          padding:5px 10px;
+          border:none;
+          outline: none;
+      }
+      .tab-container div{
+        width: 400px;
+        height: 260px;
+        display: none;
+        text-align: center;
+        line-height: 260px;
+        border: 1px solid red;
+        margin: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="tab-container">
+        <input type="button" value="tab1">
+        <input type="button" value="tab2">
+        <input type="button" value="tab3">
+        <div>tab1 内容</div>
+        <div>tab2 内容</div>
+        <div>tab3 内容</div>
+    </div>
+    <div class="tab-container">
+        <input type="button" value="tab1">
+        <input type="button" value="tab2">
+        <input type="button" value="tab3">
+        <div>tab1 内容</div>
+        <div>tab2 内容</div>
+        <div>tab3 内容</div>
+    </div>
+    <script src="tab.js"></script>
+  </body>
+</html>
